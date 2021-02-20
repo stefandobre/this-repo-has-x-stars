@@ -1,7 +1,8 @@
 name: "This repo has x stars"
 
 on:
-  star
+  watch:
+    types: [started]
 
 jobs:
   update:
