@@ -1,0 +1,14 @@
+name: "This repo has x stars"
+
+on:
+  star
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update description
+        uses: stefandobre/this-repo-has-x-stars
+        with:
+          token: ${{ secrets.TOKEN }}
+          template: 'test'
